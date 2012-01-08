@@ -1,0 +1,43 @@
+User:
+  Admin:
+    username: landsverka
+    password: password
+    email: dewdew@gmail.com
+    first_name: Andrew
+    last_name: Landsverk
+    birthdate: 04/12/1988
+    show_nsfw: 1
+    privs: 10
+    quota: 0
+  Test:
+    username: test123
+    password: test123
+    email: test@test.com
+    first_name: Test
+    last_name: Tester
+    birthdate: 04/12/1988
+    show_nsfw: 0
+    privs: 0
+    quota: 104857600
+    
+News:
+  Story1:
+    title: Story 1
+    story: The new site is coming along great!
+    User: Admin
+  Story2:
+    title: Story 2
+    story: The new site is coming along great!
+    User: Admin
+  Story3:
+    title: Story 3
+    story: The new site is coming along great!
+    User: Admin
+  Story4:
+    title: Story 4
+    story: The new site is coming along great!
+    User: Admin
+  Story5:
+    title: Story 5
+    story: The new site is coming along great!
+    User: Admin

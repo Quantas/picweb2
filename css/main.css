@@ -1,0 +1,321 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #4D4D4D;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+img{
+border:0;
+}
+
+/* Everything needs a shell, right?*/
+#shell {
+	width: 800px;
+	margin: auto;
+}
+
+#header{
+        background-color:#000;
+        color:#fff;
+        height:35px;
+        /*margin-top:-10px;*/
+        text-align:center;
+}
+
+#sidebar{
+        position: absolute;
+        width: 300px;
+        right: -304px;
+}
+
+div#header a{
+    text-decoration:none;
+    font-weight:bold;
+    color:#fff;
+}
+div#header a:visited,a:active{
+    font-weight:bold;
+    color:#fff;
+}
+div#header a:hover{
+    color:#0f0;
+}
+
+#nav{
+height:auto;
+padding-top:8px;
+text-align:center;
+vertical-align: middle;
+}
+
+#nav form input[type=text],input[type=password] {
+	width: 100px;
+        height: 15px;
+	border: 1px solid #FFF;
+}
+
+div#menu a {
+	text-decoration: none;
+}
+div#menu a:hover {
+	background: #ffffff;
+	color: #0f0;
+	padding-bottom: 8px;
+}
+
+#content{
+text-align:center;
+position:relative;
+padding:4px;
+color:#fff;
+border-left: 1px solid gray;
+border-right: 1px solid gray;
+border-bottom: 1px solid gray;
+}
+
+#footer a,a:visited,a:active{
+	text-decoration:none;
+	color:#fff;
+}
+
+#footer a:hover{
+	text-decoration:underline;
+}
+
+#footer{
+text-align:center;
+margin-top:10px;
+padding:2px;
+background-color:#B9AA81;
+color:black;
+    -moz-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -webkit-border-radius: 6px;
+overflow:hidden;
+}
+
+#bottom{
+    text-align:center;
+    margin-top:5px;
+    font-size:small;
+    color:white;
+}
+
+/* picweb Info Table------------*/
+table.infoTable td {
+	padding: 2px;
+        font-size: 14px;
+        text-align: left;
+}
+
+tr.InfoLink td {
+    text-align:center;
+}
+
+table.infoTable th {
+	padding: 2px;
+        text-align: right;
+        font-weight:bold;
+        font-size:14px;
+}
+
+/* picweb Sidebar Table------------*/
+table.sidebarTable td {
+	padding: 2px;
+        font-size: small;
+        text-align: left;
+        color:white;
+}
+
+table.sidebarTable th {
+	padding: 2px;
+        text-align: right;
+        font-weight:bold;
+        font-size:small;
+        color:white;
+}
+
+.commentRow {
+     border: 1px solid gray;
+}
+
+table.commentTable tr {
+       color: #ffffff;
+}
+
+table.commentTable td {
+	border-bottom-width: 2px;
+	padding: 2px;
+        text-align: left;
+        word-break:break-all;
+}
+
+table.commentTable th {
+	border-bottom-width: 2px;
+	padding: 2px;
+	border-bottom-style: hidden;
+	background-color: #ffffff;
+        color: #000000;
+}
+
+.commentDate {
+        font-size:8pt;
+}
+
+/* picweb pictureView TABLE-------------------------------*/
+#pictureView table,th,td {
+	border-width: 0px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* picweb GALLERY TABLE-------------------------------*/
+#picweb_gallery table,th,td {
+	border-width: 0px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* picweb FORM ------------------------------------*/
+#picweb_form{
+    margin: auto; 
+    width: 360px; 
+    font-size: 16px;
+}
+
+#picweb_form td {
+    padding:4px;
+}
+
+#picweb_form table {
+    margin:0 auto;
+}
+
+#picweb_form .heading {
+	text-align: center;
+        font-size: 18px; 
+        font-weight: bold;	;
+}
+
+#picweb_form form {
+        border: 1px solid gray;
+	padding: 10px;
+}
+
+#picweb_form form label {
+    font-weight: bold;
+
+}
+#picweb_form form input[type=text],input[type=password] {
+	width: 200px;
+	font-weight: bold;
+	padding: 4px;
+	border: 1px solid #FFF;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+#picweb_form form input[type=submit] {
+	display: block;
+	margin: auto;
+	width: 200px;
+	font-size: 18px;
+	background-color: #FFF;
+	border: 2px solid #BBB;
+}
+
+#picweb_form form input[type=file] {
+    color:#fff;
+}
+
+#picweb_form form input[type=submit]:hover {
+    border-color: #0f0;
+}
+
+#picweb_form .error {
+    font-size: 13px; 
+    color: #f00; 
+    font-weight:bold; 
+}
+
+div#PM_error, div#PM_info{
+	color: #000;
+	background-color: #ffbbbb;
+	border: 1px solid #ff0000;
+	margin: 3px;
+	padding: 2px;
+	text-align: left;
+}
+div#PM_error ul, div#PM_info ul{
+	margin: 0;
+}
+
+div#PM_info{
+	background-color: #bbbbff;
+	border-color: #0000ff;
+}
+
+a{
+    text-decoration:none;
+    font-weight:bold;
+    color:#fff;
+}
+a:visited,a:active{
+    font-weight:bold;
+    color:#fff;
+}
+a:hover{
+    color:#0f0;
+}
+
+div.diskspace {
+    border: 1px solid white;
+    height: 10px; /* any height */
+    overflow: hidden;
+    width: 125px; /* any width */
+}
+div.diskspace p {
+    background: gray; /* any color */
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Admin page*/
+
+#admin_page{
+    font-size:11pt;
+}
+
+#admin_page table{
+    border-collapse:collapse;
+    margin:0 auto;
+}
+
+#admin_page td {
+    padding:2px;
+}
+
+#admin_page .highlight:hover{
+    background-color:#efefef;
+    color:#000000;
+}
+
+#admin_userHead{
+    border:1px solid white;
+}
+#admin_userData{
+    border:1px solid white;
+}
+
+#admin_albumsHead{
+    border:1px solid white;
+}
+#admin_albumsData{
+    border:1px solid white;
+}
+
+.centerMargin{
+    text-align:center;
+}
