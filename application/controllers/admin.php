@@ -3,7 +3,6 @@
     public function __construct() 
     {
 		parent::__construct();
-		check_config();
         $this->load->model('Admin_model');
     }
 

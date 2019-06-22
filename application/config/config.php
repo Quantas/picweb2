@@ -11,7 +11,7 @@
 |	http://example.com/
 |
 */
-$config['base_url']	= "http://".$_SERVER['HTTP_HOST']."/picweb2/";
+$config['base_url']	= "http://".$_SERVER['HTTP_HOST']."/";
 
 /*
 |--------------------------------------------------------------------------
@@ -23,7 +23,7 @@ $config['base_url']	= "http://".$_SERVER['HTTP_HOST']."/picweb2/";
 | variable so that it is blank.
 |
 */
-$config['index_page'] = "";
+$config['index_page'] = "index.php";
 
 /*
 |--------------------------------------------------------------------------
@@ -350,6 +350,6 @@ $config['apc_cache'] = TRUE;
 | Registration
 |--------------------------------------------------------------------------
 */
-$config['registration'] = FALSE;
+$config['registration'] = TRUE;
 /* End of file config.php */
 /* Location: ./system/application/config/config.php */

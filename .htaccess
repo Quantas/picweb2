@@ -3,9 +3,9 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*) /picweb2/index.php?/$1
-    RewriteCond %{HTTP_REFERER} !^http://buildserver.quantasnet.net/ [NC]
+    RewriteCond %{HTTP_REFERER} !^http://localhost/ [NC]
     RewriteCond %{HTTP_REFERER} !^$
-    RewriteRule ^(display.*)$ http://buildserver.quantasnet.net/picweb2/images/linking.png [NC]
+    RewriteRule ^(display.*)$ http://localhost/picweb2/images/linking.png [NC]
 </IfModule>
 <IfModule !mod_rewrite.c>
     ErrorDocument 404 /picweb2/index.php
