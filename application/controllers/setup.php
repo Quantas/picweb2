@@ -30,10 +30,11 @@ class Setup extends CI_Controller {
 	{
 		if ($this->input->post('do_setup_tasks'))
 		{
-			//drop tables
 			$this->load->database();
+
 			/* fill in your database name */
 			$database_name = $this->db->database;
+			$existingTablesSql = "SHOW TABLES FROM $database_name where tables_in_$database_name not in ('ci_sessions')";
 
 			/* connect to MySQL */
 			if (!$link = mysql_connect($this->db->hostname, $this->db->username, $this->db->password)) {
@@ -41,8 +42,7 @@ class Setup extends CI_Controller {
 			}
 
 			/* query all tables */
-			$sql = "SHOW TABLES FROM $database_name where tables_in_$database_name not in ('ci_sessions')";
-			if($result = mysql_query($sql)){
+			if($result = mysql_query($existingTablesSql)){
 				/* add table name to array */
 				while($row = mysql_fetch_row($result)){
 					$found_tables[]=$row[0];
@@ -52,22 +52,13 @@ class Setup extends CI_Controller {
 				die("Error, could not list tables. MySQL Error: " . mysql_error());
 			}
 
-			/* loop through and drop each table */
+			mysql_close($link);
+			mysql_free_result($result);
+
 			if(isset($found_tables))
 			{
-				foreach($found_tables as $table_name){
-			  $sql = "DROP TABLE $database_name.$table_name";
-			  if($result = mysql_query($sql)){
-			  	$vars['mysqlDrop'] = "Success - table $table_name deleted.";
-			  }
-			  else{
-			  	$vars['mysqlDrop'] = "Error deleting $table_name. MySQL Error: " . mysql_error() . "";
-			  }
-				}
+				die('Already Setup!');
 			}
-			mysql_close($link);
-				
-			mysql_free_result($result);
 				
 			//create Tables
 			Doctrine::createTablesFromModels();

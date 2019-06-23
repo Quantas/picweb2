@@ -7,7 +7,7 @@ Created in 2009 by Andrew Landsverk as a learning exercise.
 ### Docker
 
 1. Edit `application/fixtures/data.yml` and update the admin credentials to be your own
-2. docker-compose up -d
+2. docker-compose up -d --build
 3. After the applicaiton has started, Navigate to http://localhost/picweb2/setup
 4. Click "Submit"
 5. After the page refreshes you can now navigate to http://localhost/picweb2
