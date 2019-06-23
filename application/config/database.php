@@ -38,9 +38,9 @@ $active_group = "default";
 $active_record = TRUE;
 
 $db['default']['hostname'] = "database";
-$db['default']['username'] = "picweb";
-$db['default']['password'] = "picweb";
-$db['default']['database'] = "picweb";
+$db['default']['username'] = "picweb2";
+$db['default']['password'] = "picweb2";
+$db['default']['database'] = "picweb2";
 $db['default']['dbdriver'] = "mysql";
 $db['default']['dbprefix'] = "";
 $db['default']['pconnect'] = TRUE;

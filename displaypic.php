@@ -4,9 +4,9 @@ if(isset($_SERVER['HTTP_REFERER']) && ( strpos($_SERVER['HTTP_REFERER'],$_SERVER
 $id=$_GET['pic'];//get id
 $size=$_GET['size'];
 $hostname_picweb = "database";
-$database_picweb = "picweb";
-$username_picweb = "picweb";
-$password_picweb = "picweb";
+$database_picweb = "picweb2";
+$username_picweb = "picweb2";
+$password_picweb = "picweb2";
 $picweb = mysql_pconnect($hostname_picweb, $username_picweb, $password_picweb) or trigger_error(mysql_error(),E_USER_ERROR);
 
 mysql_select_db($database_picweb, $picweb);
